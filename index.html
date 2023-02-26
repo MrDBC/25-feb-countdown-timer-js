@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <span class="timer-icon">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNnB4IiBoZWlnaHQ9IjM2cHgiIHZpZXdCb3g9IjAgMCA0OCA0OCIgZmlsbD0iIzQyODVGNCI+CiAgICA8cGF0aCBkPSJNMTIgNXYxMGw5IDktOSA5djEwaDI0VjMzbC05LTkgOS05VjVIMTJ6bTIwIDI5djVIMTZ2LTVsOC04IDggOHptLTgtMTJsLTgtOFY5aDE2djVsLTggOHoiLz4KICAgIDxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoNDh2NDhIMFYweiIvPgo8L3N2Zz4K" alt="">
+            <p>TIMER</p>
+        </span>
+        <div id="popup" >
+            <div class="popup-content">
+              <div class="para">
+                <p>your time is up !!!! </p>
+                <p>Get back to WORK.</p>
+              </div>
+              <button class="close">Dismiss</button>
+            </div>
+        </div>
+        <div class="time-container">
+            <div class="time-wrapper">
+                <div class="hrs time">
+                    <input oncopy="false" placeholder="00" type="text" id="hrs-input" value="">
+                    <p>HR</p>
+                </div>
+                <div class="hrs time">
+                    <input placeholder="00" type="text" id="mins-input" value="">
+                    <p>MIN</p>
+                </div>
+                <div class="hrs time">
+                    <input placeholder="00" type="text" id="secs-input" value="">
+                    <p>SEC</p>
+                </div>
+            </div>
+        </div>
+        <div class="start-container">
+            <button onclick="start()" class="btns" id="start-button">start</button>
+            <!-- <button onclick="pause()" class="btns" id="pause-button">pause</button> -->
+            <button onclick="reset()" class="btns" id="reset-button">reset</button>
+        </div>
+
+        <audio  id="alarm-audio" preload="auto" src="/assets//alarm.wav">
+            <p>Your browser does not support the audio element</p>
+        </audio>
+    </div>
+
+    <script src="file.js"></script>
+</body>
+</html>
