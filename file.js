@@ -28,8 +28,7 @@ const start=()=>{
         return;
     }
 
-    // this is the [start/resume state] function
-    isPaused= false
+    
         
     // get the values enterd by the user on the input boxes
     let hr = hrInput.value ;
@@ -40,6 +39,7 @@ const start=()=>{
     if( isNaN(hr) || isNaN(min) || isNaN(sec)){
         alert('input provided should be numbers')
         reset()
+        return;
     }
 
     // calculate the total no of seconds at the start
@@ -65,9 +65,13 @@ const start=()=>{
     
     // reload the page to take in fresh inputs again
     if( boolNegative || boolExceeding60){
-        window.location.reload();
+        reset();
         return;
-    }    
+    }   
+
+    // after checking for all invalid inputs, we can safely start our
+    // setInterval function 
+    isPaused= false
     
 }
 
