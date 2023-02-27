@@ -136,5 +136,5 @@ const soundAndPopup=()=>{
 
 // just reset the state by reloading the page
 const reset = ()=>{
-    window.location.reload();      
+    window.location = window.location.href ;
 }
