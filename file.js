@@ -17,7 +17,7 @@ const start=()=>{
     // it will decide the state and what is displayed on the button (i.e., innerText)
     // if the no of clicks are odd, the state is running and (PAUSE is displayed on the button)
     // if the no of clicks are even, the staet is on hold & (RESUME is displayed on the button)
-    cntClicks += 1;
+    cntClicks = !cntClicks;
     const startButton = document.getElementById('start-button')
 
     if( cntClicks%2 !=0 ){      // running state
