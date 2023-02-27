@@ -2,6 +2,7 @@ let isPaused= true;
 let timeAtStart ;
 let timeLeft = 0;
 let cntClicks=0;
+const url = window.location.href
 
 
 hrInput= document.getElementById('hrs-input')
@@ -126,15 +127,15 @@ const soundAndPopup=()=>{
     popUp.style.display = "block";
 
     // When the user clicks on "dismiss" btn, close the popUp & reset state
-    closeBtn.onclick = function() {
+    closeBtn.addEventListener('click',  ()=> {
         popUp.style.display = "none";
         alarm.pause();
         reset();
-    }
+    })
    
 }
 
 // just reset the state by reloading the page
 const reset = ()=>{
-    window.location = window.location.href ;
+    window.location = url ;
 }
