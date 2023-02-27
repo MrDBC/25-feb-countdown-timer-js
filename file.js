@@ -100,9 +100,9 @@ let countdown = setInterval(()=> {
         let sec = Math.floor((timeLeft- (hr*3600 + min * 60)));
         // console.log(hr, min, sec)
 
-        hrInput.value = hr;
-        minInput.value = min;
-        secInput.value = sec;
+        hrInput.value = hr.toString().padStart(2,'0');
+        minInput.value = min.toString().padStart(2,'0');
+        secInput.value = sec.toString().padStart(2,'0');
     }
     
 
@@ -133,7 +133,6 @@ const soundAndPopup=()=>{
     }
    
 }
-
 
 // just reset the state by reloading the page
 const reset = ()=>{

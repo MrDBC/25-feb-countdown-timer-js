@@ -9,13 +9,13 @@
 body{
     height: 100vh;
     display: flex;
-    background-color: rgb(153, 203, 228);
+    background-color: rgb(107, 201, 249);
 }
 .main-container{
-    background-color: rgb(221, 232, 225);
+    background-color: rgb(210, 238, 220);
     
     border: 1px solid rgb(128, 128, 128);
-    box-shadow: 3px 3px ;
+    box-shadow: 5px 5px 3px ;
     border-radius: 5px;
     margin: auto;
     width: 50vw;
